@@ -2,7 +2,7 @@
     "name": "ascii",
     "version": "0.1.0",
     "private": true,
-    "main": "tablet.js",
+    "main": "main.js",
     "scripts": {
         "dev": "next dev",
         "start": "electron .",
@@ -11,6 +11,14 @@
         "build": "next build",
         "Next": "next start",
         "lint": "next lint"
+    },
+    "deepSeek":{
+        "model": "deepseek-r1-distill-llama-70b",
+        "temperature": 0.6,
+        "max_completion_tokens": 4096,
+        "top_p": 0.95,
+        "stream": true,
+        "stop": null
     },
     "Mistral": {
         "model": "mixtral-8x7b-32768",

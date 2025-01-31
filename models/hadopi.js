@@ -10,8 +10,6 @@ const bot = new Telegraf('api-Key', {
 });
 let conversationLog = [];
 
-
-
 bot.use((ctx, next) => {
     if (ctx.message) {
         conversationLog.push({
@@ -22,12 +20,10 @@ bot.use((ctx, next) => {
     }
     return next();
 });
-const BOT_USERNAME = 'meta';
-
+const BOT_USERNAME = 'MandatoryAi';
 bot.start((ctx) => {
     ctx.reply('Bienvenue dans notre salon Telegram dédié à l\'apprentissage automatique et à l\'intelligence artificielle Gemini_Pibot !');
 });
-
 bot.help((ctx) => {
   const helpMessage = `
   Commandes disponibles:

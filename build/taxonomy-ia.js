@@ -4,6 +4,7 @@ const moteurCalculMC = `{
     "t": "tFunction(_value)",
     "output": "result"
 }}`;
+
 const RéplierIR = `Impôt-sur le-revenu`;
 const RépliquerRSA = `Revenus-salariaux-et-assimilés`;
 const RépliquerRPPM= `Revenus-et-profits-du patrimoine-mobilier`;
